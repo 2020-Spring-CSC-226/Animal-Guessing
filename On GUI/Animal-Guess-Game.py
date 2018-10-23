@@ -155,7 +155,209 @@ def main():
     :return:
     '''
 
-    data = json.load(open('data.json'))  # loads external json file, where all the data is stored
+    # data = json.load(open('data.json'))  # loads external json file, where all the data is stored
+    data = {
+"Q"    : "Can it fly?",
+"yes"   : {
+        "Q"  : "Does it have feathers?",
+        "yes" : {
+                "Q"   : "Does it sometimes live in the water?",
+                "yes" : {
+                        "Q"   : "Does it eat fish?",
+                        "yes" : {
+                                "Q"   : "Does it have long legs?",
+                                "yes" : {
+                                        "G"  : "Stork"
+                                        },
+                                "no"  : {
+                                        "G"  : "Duck"
+                                        }
+                                },
+                        "no"  : {
+                                "Q"   : "Does it eat other animals?",
+                                "yes" : {
+                                        "G"  : "Eagle"
+                                        },
+                                "no"  : {
+                                        "G"  : "Kingfisher"
+                                        }
+                                }
+                        },
+                "no"  : {
+                        "Q"   : "Does it live in a forest?",
+                        "yes" : {
+                                "Q"   : "Does it have a long nose?",
+                                "yes" : {
+                                        "G"  : "Crow"
+                                        },
+                                "no"  : {
+                                        "G"  : "Sparrow"
+                                        }
+                                },
+                        "no"  : {
+                                "Q"   : "Is it a pet?",
+                                "yes" : {
+                                        "Q"   : "Can it speak human language?",
+                                        "yes" : {
+                                                "G"  : "Parrot"
+                                                },
+                                        "no"  : {
+                                                "G"  : "Canery"
+                                                }
+                                        },
+                                "no"  : {
+                                        "Q"   : "Does it sing sweetly?",
+                                        "yes" : {
+                                                "G"  : "Nightingale"
+                                                },
+                                        "no"  : {
+                                                "G"  : "Mockingbird"
+                                                }
+                                        }
+                                }
+                        }
+                },
+        "no"  : {
+                "Q"   : "Is it a big animal?",
+                "yes" : {
+                        "Q"   : "Is it a legendary animal?",
+                        "yes" : {
+                                "Q"   : "Does it breath fire?",
+                                "yes" : {
+                                        "G"  : "Dragon"
+                                        },
+                                "no"  : {
+                                        "G"  : "Carnivorous Lizard"
+                                        }
+                                },
+                        "no"  : {
+                                "Q"   : "Does it live in Antarctica?",
+                                "yes" : {
+                                        "G"  : "Penguin"
+                                        },
+                                "no"  : {
+                                        "G"  : "Flying Ray"
+                                        }
+                                }
+                        },
+                "no"  : {
+                        "Q"   : "Does it fly at night?",
+                        "yes" : {
+                                "Q"   : "Is it also a movie hero?",
+                                "yes" : {
+                                        "G"  : "Bat"
+                                        },
+                                "no"  : {
+                                        "G"  : "Flying Limur"
+                                        }
+                                },
+                        "no"  : {
+                                "Q"   : "Does it usually live on ground?",
+                                "yes" : {
+                                        "G"  : "Flying Ant"
+                                        },
+                                "no"  : {
+                                        "G"  : "Bee"
+                                        }
+                                }
+                        }
+                }
+        },
+"no"    : {
+        "Q"  : "Is it a wild animal?",
+        "yes" : {
+                "Q"   : "Is it a huge animal?",
+                "yes" : {
+                        "Q"   : "Does it eat meat?",
+                        "yes" : {
+                                "Q"   : "Can it run fast?",
+                                "yes" : {
+                                        "G"  : "Tiger"
+                                        },
+                                "no"  : {
+                                        "G"  : "Werewolf"
+                                        }
+                                },
+                        "no"  : {
+                                "Q"   : "Can it swim?",
+                                "yes" : {
+                                        "G"  : "Whale"
+                                        },
+                                "no"  : {
+                                        "G"  : "Elephant"
+                                        }
+                                }
+                        },
+                "no"  : {
+                        "Q"   : "Does it meat?",
+                        "yes" : {
+                                "Q"   : "Can it swim?",
+                                "yes" : {
+                                        "G"  : "Shark"
+                                        },
+                                "no"  : {
+                                        "G"  : "Cheetah"
+                                        }
+                                },
+                        "no"  : {
+                                "Q"   : "Does it run fast?",
+                                "yes" : {
+                                        "G"  : "Zebra"
+                                        },
+                                "no"  : {
+                                        "G"  : "Sloth"
+                                        }
+                                }
+                        }
+                },
+        "no"  : {
+                "Q"   : "Does it run fast?",
+                "yes" : {
+                        "Q"   : "Is it a big animal?",
+                        "yes" : {
+                                "Q"   : "Does it have long legs?",
+                                "yes" : {
+                                        "G"  : "Horse"
+                                        },
+                                "no"  : {
+                                        "G"  : "Sheep"
+                                        }
+                                },
+                        "no"  : {
+                                "Q"   : "Does it green?",
+                                "yes" : {
+                                        "G"  : "Cat"
+                                        },
+                                "no"  : {
+                                        "G"  : "Dog"
+                                        }
+                                }
+                        },
+                "no"  : {
+                        "Q"   : "Does it have feathers?",
+                        "yes" : {
+                                "Q"   : "Can it swim?",
+                                "yes" : {
+                                        "G"  : "Duck"
+                                        },
+                                "no"  : {
+                                        "G"  : "Hen"
+                                        }
+                                },
+                        "no"  : {
+                                "Q"   : "Does it green?",
+                                "yes" : {
+                                        "G"  : "Sheep"
+                                        },
+                                "no"  : {
+                                        "G"  : "Loris"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
 
     root = Tk()                          # makes an instance of tkinter module
     root.geometry('800x500+300+50')      # size and opening position of the window
